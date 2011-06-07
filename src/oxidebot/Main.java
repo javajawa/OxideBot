@@ -24,7 +24,7 @@ public class Main
    */
   public static void main(String[] args) throws IOException, IrcException, ClassNotFoundException
   { 
-    RequestBot bot = new RequestBot();
+    RequestBot bot = new RequestBot("ElizaBot");
 
     bot.addHandler(new OpAuthHandler("secret"));
     bot.addHandler(new HelpHandler());

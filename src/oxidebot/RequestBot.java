@@ -24,11 +24,11 @@ public class RequestBot extends PircBot
   protected Set<String> ops;
   protected int lastId;
 
-  public RequestBot()
+  public RequestBot(String name)
   {
     super();
 
-    this.setName("ElizaBot");
+    this.setName(name);
     requestList = new ArrayList<Request>(20);
     
     handlers = new LinkedList<RequestBotMessageHandler>();

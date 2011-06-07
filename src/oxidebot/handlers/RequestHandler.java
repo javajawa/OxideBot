@@ -35,7 +35,6 @@ public class RequestHandler extends RequestBotMessageHandler {
       for (Request r : requestList) {
         if (r.getRequest().equalsIgnoreCase(request)) {
           if (!r.requestedBy(sender)) {
-            
             bot.sendMessages(sender, "Request Failed: You have already requested this");
           } else {
             bot.sendMessages(sender, r.getRequest() + " up-voted");
